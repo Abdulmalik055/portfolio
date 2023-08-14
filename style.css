@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Open+Sans&family=Tajawal&display=swap");
+
+* {
+  font-family: Bebas Neue;
+  letter-spacing: 3px;
+  padding: 0rem;
+  margin: 0rem;
+  flex-wrap: wrap;
+  color: #BDB8AF;
+
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cfdce0;
+}
+
+nav {
+  display: flex;
+  padding: 1rem;
+  width: 100%;
+  justify-content: center;
+  box-shadow: 1px 1px 20px hsla(0, 0%, 22%, 0.734);
+  background-color: #1B282C;
+
+}
+
+
+
+.port{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a{
+  padding: 0rem;
+  margin: 0rem;
+  color: #434344;
+  text-decoration: none;
+}
+
+
+.Card h1 {
+  margin-top: 2rem ;
+  margin-bottom: 0.5rem;
+}
+.Card {
+  flex-wrap: wrap;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1B282C;
+  width: 45svh;
+  border-radius: 15px;
+  margin: 1.4rem;
+  box-shadow: 1px 1px 20px #ffffff4e;
+}
+.Card:hover{
+  transform: scale(1.1);
+
+}
+
+.Logo_Website {
+  width: 7svb;
+  height: 5svb;
+  padding: 1rem;
+  z-index: 1;
+  margin: 0rem 0 -2.3rem 0;
+  background-color: #404548;
+  box-shadow: 1px 1px 20px #00000038;
+  border-radius: 50%;
+}
+
+.Image_Website {
+  width: 45svh;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 1px 1px 20px #0000004e;
+  cursor: pointer;
+}
+
+
