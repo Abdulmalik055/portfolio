@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Tajawal:wght@400;700&display=swap");
+
+/* --- Global Styles & Reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Deeper & cleaner color palette */
+  --primary-bg: #11151c; /* A very deep, clean blue-black */
+  --secondary-bg: #1c232e; /* Slightly lighter shade for panels */
+  --text-color: #f1f2f6; /* Off-white for readability */
+  --accent-color: #60a5fa; /* A clean, calm blue */
+  --string-color: #a7f3d0; /* Soft green for strings */
+  --keyword-color: #a78bfa; /* Soft purple for keywords */
+  --comment-color: #6b7280; /* Neutral grey for comments */
+  --border-color: #3f4455; /* Subtle border color */
+
+  /* Terminal dots colors - Modernized */
+  --dot-red: #f44336;
+  --dot-yellow: #ffc107;
+  --dot-green: #4caf50;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+  background-color: var(--secondary-bg);
+  width: 100%;
+  padding: 3rem 1rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.main-header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  white-space: pre-wrap;
+  overflow: hidden;
+}
+
+.main-header p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--comment-color);
+  margin-top: 0.5rem;
+}
+
+/* --- Portfolio Grid Container --- */
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+.demo-credentials {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+/* --- Project Card (Code Style) --- */
+.project-card-code {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card-code:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-color: var(--accent-color);
+}
+
+.card-header {
+  background-color: var(--primary-bg);
+  padding: 0.75rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red {
+  background-color: var(--dot-red);
+}
+.dot.yellow {
+  background-color: var(--dot-yellow);
+}
+.dot.green {
+  background-color: var(--dot-green);
+}
+
+.card-content-code {
+  padding: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.project-title-code {
+  font-size: 1rem;
+  color: var(--string-color);
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-logo-code {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+  background-color: var(--secondary-bg);
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: var(--comment-color);
+}
+
+.project-language {
+  font-family: "Fira Code", monospace;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: var(--accent-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  width: fit-content;
+  font-size: 0.8rem;
+}
+
+.project-preview-code {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  filter: blur(5px);
+  transition: opacity 0.5s ease;
+}
+
+.project-card-code:hover .project-preview-code {
+  opacity: 0.2;
+}
+
+/* --- Footer --- */
+.main-footer {
+  width: 100%;
+  padding: 2rem 1rem 0;
+  text-align: center;
+  color: var(--text-color);
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+}
+
+.main-footer p:first-child {
+  color: var(--keyword-color);
+}

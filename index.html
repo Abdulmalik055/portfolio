@@ -1,85 +1,394 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Abdulmalik Alghaith</title>
+    <link rel="stylesheet" href="st-v2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Tajawal:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio </title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <header class="main-header">
+      <nav>
+        <h1>Abdulmalik Alghaith</h1>
+        <p>// A collection of my work in web development</p>
+      </nav>
+    </header>
 
-<body>
-    <nav><h1>Portfolio</h1></nav>
-    <div class="port">
-        <a href="https://autismconf.thechapter.sa/">
-            <div class="Card">
-                <h1>Autism conference</h1>
-                <img class="Logo_Website" src="images/autismconf_logo.png" alt="Marakez">
-                <img class="Image_Website" src="images/autismconf-website.png" alt="Marakez">
-            </div>
-        </a>
-        <a href="https://www.endocrine.org.sa/">
-            <div class="Card">
-                <h1>SSEM</h1>
-                <img class="Logo_Website" src="images/Logo-endocrine.png" alt="Marakez">
-                <img class="Image_Website" src="images/SSEM-website.PNG" alt="Marakez">
-            </div>
-        </a>
-        <a href="https://wnw.388.myftpupload.com/">
-            <div class="Card">
-                <h1>Sadan</h1>
-                <img class="Logo_Website" src="images/Sadan-logo.png" alt="Marakez">
-                <img class="Image_Website" src="images/Sadan-website.PNG" alt="Marakez">
-            </div>
-        </a>
-        <a href="https://marakezsa.com">
-            <div class="Card">
-                <h1>marakez</h1>
-                <img class="Logo_Website" src="images/marakez_logo.png" alt="Marakez">
-                <img class="Image_Website" src="images/marakez_website.png" alt="Marakez">
-            </div>
-        </a>
-        <a href="https://www.iblaed.com">
-            <div class="Card">
-                <h1>blaed</h1>
-                <img class="Logo_Website" src="images/blaed_logo.png" alt="blaed">
-                <img class="Image_Website" src="images/blaed_website.png" alt="blaed">
-            </div>
-        </a>
-        <a href="https://livelinkksa.com">
-            <div class="Card">
-                <h1>Livelink</h1>
-                <img class="Logo_Website" src="images/livelink_logo.png" alt="Livelink">
-                <img class="Image_Website" src="images/livelink_website.png" alt="Livelink">
-            </div>
-        </a>
+    <main class="portfolio-container">
+      <a
+        href="https://membership.endocrine.org.sa/"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`Membership_System`</h2>
+          <img
+            class="project-logo-code"
+            src="images/membership_logo.png"
+            alt="Membership System Logo"
+          />
+          <p class="project-description">
+            // Membership management system for Endocrine Society
+          </p>
+          <code class="project-language">`Laravel`, `PHP`, `MySQL`</code>
 
-        <a href="https://makingoftv.net">
-            <div class="Card">
-                <h1>Making of</h1>
-                <img class="Logo_Website" src="images/Makingof_logo.png" alt="Making-of" >
-                <img class="Image_Website" src="images/Makingof_website.png" alt="Making-of">
-            </div>
-        </a>
+          <p class="demo-credentials">
+            Demo Login → <br />
+            <strong>Email:</strong> admin@thechapter.sa <br />
+            <strong>Password:</strong> M794N5Yx+-&o
+          </p>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/membership-website.png"
+          alt="Membership System Screenshot"
+        />
+      </a>
+      <a
+        href="https://scorm.thechapter.academy"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`SCORM_System`</h2>
+          <img
+            class="project-logo-code"
+            src="images/thechapter_logo.png"
+            alt="SCORM System Logo"
+          />
+          <p class="project-description">
+            // Learning management system with SCORM integration
+          </p>
+          <code class="project-language">`Moodle`, `PHP`, `MySQL`</code>
+          <p class="demo-credentials">
+            Demo Login → <br />
+            <strong>Username:</strong> admin-a <br />
+            <strong>Password:</strong> M794N5Yx+-&o
+          </p>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/thechapter-website.png"
+          alt="SCORM System Screenshot"
+        />
+      </a>
 
-        <a href="https://musabalbishi.github.io/weather-api/">
-            <div class="Card">
-                <h1>Weather App</h1>
-                <img class="Logo_Website" src="images/weather-api_logo.png" alt="Weather-App">
-                <img class="Image_Website" src="images/weather-api_website.png" alt="Weather-App">
-            </div>
-        </a>
+      <a
+        href="https://abdulmalik055.github.io/VitalTech"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`VitalTech`</h2>
+          <img
+            class="project-logo-code"
+            src="images/VitalTech_logo.png"
+            alt="VitalTech Logo"
+          />
+          <p class="project-description">
+            // Appointment booking and management system
+          </p>
+          <code class="project-language">`HTML`, `CSS`, `JS`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/vitalTech-website.png"
+          alt="VitalTech Website Screenshot"
+        />
+      </a>
+      <a
+        href="https://autismconf.thechapter.sa/"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`Autism Conference`</h2>
+          <img
+            class="project-logo-code"
+            src="images/autismconf_logo.png"
+            alt="Autism Conference Logo"
+          />
+          <p class="project-description">
+            // A comprehensive website for a conference
+          </p>
+          <code class="project-language">`HTML`, `CSS`, `JS`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/autismconf-website.png"
+          alt="Autism Conference Website Screenshot"
+        />
+      </a>
 
-        <a href="https://food-free-front.onrender.com/login">
-            <div class="Card">
-                <h1>Food Free</h1>
-                <img class="Logo_Website" src="images/foodfree_logo.png" alt="Food-Free">
-                <img class="Image_Website" src="images/food-free_website.png" alt="Food-Freep">
-            </div>
-        </a>
+      <a
+        href="https://www.endocrine.org.sa/"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`SSEM_Website`</h2>
+          <img
+            class="project-logo-code"
+            src="images/Logo-endocrine.png"
+            alt="SSEM Logo"
+          />
+          <p class="project-description">
+            // An e-platform for a medical society
+          </p>
+          <code class="project-language">`HTML`, `CSS`, `PHP`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/SSEM-website.PNG"
+          alt="SSEM Website Screenshot"
+        />
+      </a>
 
-    </div>
+      <a
+        href="https://wnw.388.myftpupload.com/"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`SadanCompany`</h2>
+          <img
+            class="project-logo-code"
+            src="images/Sadan-logo.png"
+            alt="Sadan Logo"
+          />
+          <p class="project-description">
+            // A corporate website for a company
+          </p>
+          <code class="project-language">`HTML`, `CSS`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/Sadan-website.PNG"
+          alt="Sadan Website Screenshot"
+        />
+      </a>
 
-</body>
+      <a
+        href="https://marakezsa.com"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`MarakezSA`</h2>
+          <img
+            class="project-logo-code"
+            src="images/marakez_logo.png"
+            alt="Marakez Logo"
+          />
+          <p class="project-description">
+            // A website for a real estate company
+          </p>
+          <code class="project-language">`HTML`, `CSS`, `JS`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/marakez_website.png"
+          alt="Marakez Website Screenshot"
+        />
+      </a>
+      <a
+        href="https://livelinkksa.com"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`Livelink_KSA`</h2>
+          <img
+            class="project-logo-code"
+            src="images/livelink_logo.png"
+            alt="Livelink Logo"
+          />
+          <p class="project-description">
+            // A website for a digital marketing agency
+          </p>
+          <code class="project-language">`HTML`, `CSS`, `JS`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/livelink_website.png"
+          alt="Livelink Website Screenshot"
+        />
+      </a>
 
+      <a
+        href="https://musabalbishi.github.io/weather-api/"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`WeatherApp`</h2>
+          <img
+            class="project-logo-code"
+            src="images/weather-api_logo.png"
+            alt="Weather App Logo"
+          />
+          <p class="project-description">// A weather app using a public API</p>
+          <code class="project-language">`HTML`, `CSS`, `JS`, `API`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/weather-api_website.png"
+          alt="Weather App Screenshot"
+        />
+      </a>
+
+      <a
+        href="https://food-free-front.onrender.com/login"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`FoodFree`</h2>
+          <img
+            class="project-logo-code"
+            src="images/foodfree_logo.png"
+            alt="Food Free Logo"
+          />
+          <p class="project-description">
+            // A full-stack system for a restaurant
+          </p>
+          <code class="project-language">`Full-stack`, `React`, `Node.js`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/food-free_website.png"
+          alt="Food Free Website Screenshot"
+        />
+      </a>
+
+      <a
+        href="https://www.iblaed.com"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`Blaed_Co`</h2>
+          <img
+            class="project-logo-code"
+            src="images/blaed_logo.png"
+            alt="Blaed Logo"
+          />
+          <p class="project-description">// A corporate website for Blaed</p>
+          <code class="project-language">`HTML`, `CSS`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/blaed_website.png"
+          alt="Blaed Website Screenshot"
+        />
+      </a>
+
+      <a
+        href="https://makingoftv.net"
+        class="project-card-code"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="card-content-code">
+          <h2 class="project-title-code">`MakingOf_TV`</h2>
+          <img
+            class="project-logo-code"
+            src="images/Makingof_logo.png"
+            alt="Making of TV Logo"
+          />
+          <p class="project-description">
+            // A website for a production company
+          </p>
+          <code class="project-language">`HTML`, `CSS`</code>
+        </div>
+        <img
+          class="project-preview-code"
+          src="images/Makingof_website.png"
+          alt="Making of TV Website Screenshot"
+        />
+      </a>
+    </main>
+
+    <footer class="main-footer">
+      <p>`Abdulmalik Alghaith`;</p>
+    </footer>
+  </body>
 </html>
